@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-3</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#browsers">Підтримка браузерів</a></li>
+          <li><a href="#newelements">Нові семантичні елементи в HTML5</a></li>
+          <li><a href="#tagsection">HTML5 &lt;section&gt; елемент</a></li>
+          <li><a href="#tagarticle">HTML5 &lt;article&gt; елемент</a></li>
+          <li><a href="#tagheader">HTML5 &lt;header&gt; елемент</a></li>
+          <li><a href="#tagfooter">HTML5 &lt;footer&gt; елемент</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>HTML5 Семантичні елементи</h1>
+        <p>
+          Семантичний елемент чітко описує його значення як для браузера, так
+          і<br />
+          для розробника.
+        </p>
+
+        <p>
+          Приклади не <strong>семантичних</strong> елементів:
+          <code>&lt;div&gt;</code> і <code>&lt;span&gt;</code> - нічого не
+          говорить<br />
+          про його вміст.
+        </p>
+
+        <p>
+          Приклади <strong>семантичних</strong> елементів:
+          <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code> і
+          <code>&lt;article&gt;</code> - чітко <br />
+          визначає його зміст.
+        </p>
+      </section>
+
+      <article id="browsers">
+        <h2>Підтримка браузерів</h2>
+
+        <p>
+          <img
+            src="./img/chrome_icon.png"
+            width="32"
+            height="32"
+            ,
+            alt="Google Chrome browser"
+          />
+          <img
+            src="./img/internet_explorer_icon.png"
+            width="32"
+            height="32"
+            ,
+            alt="Internet Explorer browser"
+          />
+          <img
+            src="./img/firefox_icon.png"
+            width="32"
+            height="32"
+            ,
+            alt="Firefox browser"
+          />
+          <img
+            src="./img/safari_icon.png"
+            width="32"
+            height="32"
+            ,
+            alt="Safari browser"
+          />
+          <img
+            src="./img/opera_icon.png"
+            width="32"
+            height="32"
+            ,
+            alt="Opera browser"
+          />
+        </p>
+
+        <p>
+          Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+        </p>
+        <p>
+          Крім того, ви можете "навчити" старих браузерів, як обробляти
+          "невідомі елементи".
+        </p>
+        <p>
+          Прочитайте про це в
+          <a
+            href="https://www.blogger.com/blog/page/edit/2590532390801722394/850003172824707311#"
+            target="_blank"
+          >
+            підтримці браузера HTML5</a
+          >
+          .
+        </p>
+      </article>
+
+      <article id="newelements">
+        <h2>Нові семантичні елементи в HTML5</h2>
+        <p>
+          HTML5 пропонує нові семантичні елементи для визначення різних частин
+          <br />
+          веб-сторінки:
+        </p>
+
+        <ul>
+          <li><code>&lt;section&gt;</code></li>
+          <li><code>&lt;article&gt;</code></li>
+          <li><code>&lt;header&gt;</code></li>
+          <li><code>&lt;footer&gt;</code></li>
+        </ul>
+      </article>
+
+      <article id="tagsection">
+        <h2>HTML5 &lt;section&gt; елемент</h2>
+
+        <p>Елемент <code>&lt;section&gt;</code> визначає розділ в документі</p>
+
+        <p>
+          Згідно з документацією в3к'с HTML5: "розділ представляє собою <br />
+          тематичну угруповання контенту, зазвичай з заголовком".
+        </p>
+
+        <p>
+          Домашня сторінка зазвичай може бути розділена на розділи для <br />
+          ознайомлення, змісту і контактної інформації.
+        </p>
+
+        <iframe width="700" height="250" src="./pages/tagsection.html"></iframe>
+      </article>
+
+      <article id="tagarticle">
+        <h2>HTML5 &lt;article&gt; елемент</h2>
+
+        <p>
+          Елемент <code>&lt;article&gt;</code> визначає незалежний, автономний
+          вміст.
+        </p>
+
+        <p>
+          Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+          <br />
+          читати його незалежно від іншої частини веб-сайту.
+        </p>
+
+        Приклади того, де можна використовувати елемент
+        <code>&lt;article&gt;</code>
+
+        <ul>
+          <li>Повідомлення на форумі</li>
+          <li>блозі</li>
+          <li>Газетна стаття</li>
+        </ul>
+
+        <iframe width="700" height="250" src="./pages/tagarticle.html"></iframe>
+      </article>
+
+      <article id="tagheader">
+        <h2>HTML5 &lt;header&gt; елемент</h2>
+
+        <p>
+          Елемент <code>&lt;header&gt;</code> задає заголовок для документа або
+          розділу.
+        </p>
+
+        <p>
+          Елемент <code>&lt;header&gt;</code> повинен використовуватися в якості
+          контейнера для
+          <br />
+          вступного змісту.
+        </p>
+
+        <p>
+          В одному документі може бути кілька елементів
+          <code>&lt;header&gt;</code>.
+        </p>
+
+        <p>У наступному прикладі визначається заголовок для статті:</p>
+
+        <iframe width="700" height="250" src="./pages/tagheader.html"></iframe>
+      </article>
+
+      <article id="tagfooter">
+        <h2>HTML5 &lt;footer&gt; елемент</h2>
+
+        <p>
+          Елемент <code>&lt;footer&gt;</code> вказує нижній колонтитул для
+          документа або розділу.
+        </p>
+
+        <p>
+          Нижній колонтитул зазвичай містить автора документа, інформацію про
+          <br />
+          авторське право, посилання на умови використання, контактні дані і
+          т.д.
+        </p>
+
+        <p>
+          В одному документі може бути кілька елементів
+          <code>&lt;footer&gt;</code>.
+        </p>
+
+        <iframe width="700" height="250" src="./pages/tagfooter.html"></iframe>
+      </article>
+    </main>
+
+    <main>
+      <h3>Також можете переглянути відео про семантичні елементи HTML5:</h3>
+      <iframe
+        width="900"
+        height="506"
+        src="https://www.youtube.com/embed/kGW8Al_cga4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </main>
+
+    <hr />
+
+    <h3>My CV</h3>
+
+    <iframe width="900" height="1300" src="../Lesson-1/index.html"></iframe>
+
+    <footer>
+      <div>
+        <p></p>
+        <h3>Зв'язатись з нами:</h3>
+        <p></p>
+        <form>
+          <div>
+            <p><input type="text" placeholder="Прізвище та ім'я" /></p>
+          </div>
+          <div>
+            <p><input type="number" placeholder="Телефон" /></p>
+          </div>
+          <div>
+            <p><input type="email" placeholder="e-mail" /></p>
+          </div>
+          <div>
+            <p><input type="checkbox" /> Підписатись на розсилку</p>
+          </div>
+          <div>
+            <p><button type="submit">Відправити</button></p>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <a
+          href="https://denys-kryveha.github.io/BeetrootHomeworks/Lesson-1/index.html"
+          target="_blank"
+          >©2022 Denys Kryveha</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
