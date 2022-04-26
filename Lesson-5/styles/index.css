@@ -1,0 +1,57 @@
+.dline {
+    line-height: 1.5;
+}
+
+.main_title {
+    margin-left: 160px;
+    color: #0048B5;
+    width: 250px;
+    height: 52px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.img_left {
+    width: 117px;
+    height: 171px;
+    margin-left: 28px;
+}
+
+.flex {
+    display: flex;
+}
+
+.main_left {
+    margin-left: 15px;
+    width: 150 px;
+}
+
+.main_right {
+    margin-left: 50px;
+}
+
+.left_indent {
+    margin-left: 28px;
+    width: 200 px;
+}
+
+.right_indent {
+    margin-left: 155px;
+
+}
+
+strong {
+    font-weight: bold
+}
+
+ol {
+    list-style-type: decimal
+}
+
+ul {
+    list-style-type: disc
+}
+
+.list {
+    margin-left: 30px;
+}
