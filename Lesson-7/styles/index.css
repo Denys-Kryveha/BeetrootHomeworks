@@ -1,0 +1,119 @@
+body {
+    max-width: 1920px;
+    margin: 0px;
+}
+
+h2,
+p {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    height: 87px;
+    top: 0;
+    box-shadow: 1px 1px 1px whitesmoke;
+    background-color: whitesmoke;
+    padding: 32px 40px 0px 40px;
+    box-sizing: border-box;
+}
+
+
+.eng_language {
+    color: transparent;
+    -webkit-text-stroke: 1px #000000;
+    font-size: 20px;
+    height: 23px;
+    width: 41px;
+}
+
+.main_title {
+    display: inline;
+    margin-left: 42px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 243px;
+    height: 55px;
+    position: absolute;
+    right: 40px;
+    top: 18px;
+
+}
+
+.container {
+    height: 100vh;
+    overflow: scroll;
+    padding: 0px 40px 0px 40px;
+}
+
+.container_list {
+    width: 720px;
+    display: inline-block;
+
+}
+
+ul {
+    position: fixed;
+    font-size: 36px;
+    font-weight: bolder;
+    list-style-type: decimal;
+}
+
+li{
+    padding-top: 92px;   
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content {
+    width: 1080px;
+    display: inline-block;
+    margin-left: 720px;
+    padding-top: 87px;
+}
+
+section {
+    scroll-margin-top: 50px;
+}
+
+.line {
+    position: relative;
+    width: 80px;
+    height: 0px;
+    background-color: #000000;
+
+    border: 5px solid #000000;
+    transform: rotate(0.42deg);
+    z-index: -1;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 30px 0px 30px 0px;
+
+}
+
+p {
+    font-size: 36px;
+    padding: 30px 0px 30px 0px;
+}
+
+.strong_text {
+    font-weight: bolder;
+}
+
+.detail_logo {
+    position: absolute;
+    height: 675px;
+    width: 650px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

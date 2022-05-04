@@ -1,0 +1,198 @@
+body {
+    max-width: 1920px;
+    margin: 0px;
+}
+
+h2,
+p {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    height: 87px;
+    top: 0;
+    box-shadow: 1px 1px 1px whitesmoke;
+    background-color: whitesmoke;
+    padding: 32px 40px 0px 40px;
+    box-sizing: border-box;
+}
+
+
+.eng_language {
+    color: transparent;
+    -webkit-text-stroke: 1px #000000;
+    font-size: 20px;
+    height: 23px;
+    width: 41px;
+}
+
+.main_title {
+    display: inline;
+    margin-left: 42px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 243px;
+    height: 55px;
+    position: absolute;
+    right: 40px;
+    top: 18px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content {
+    height: 100vh;
+    overflow: scroll;
+    padding: 0px 40px 0px 40px;
+}
+
+
+.line {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 0px;
+    background-color: #000000;
+
+    border: 5px solid #000000;
+    transform: rotate(0.42deg);
+    left: 40 px;
+    margin-top: 144px;
+    z-index: -1;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bolder;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.block_facebook {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/facebook_light.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_facebook:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/facebook_dark.png);
+}
+
+.block_instagram {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/instagram_light.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_instagram:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/instagram_dark.png);
+}
+
+.block_shopify {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/shopify_dark.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_shopify:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/shopify_light.png);
+}
+
+.block_skype {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/skype_light.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_skype:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/skype_dark.png);
+}
+
+.block_pinterest {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/pinterest_light.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_pinterest:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/pinterest_dark.png);
+}
+
+.block_wix {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/wix_light.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_wix:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/wix_dark.png);
+}
+
+.block_salesforce {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/salesforce_light.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_salesforce:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/salesforce_dark.png);
+}
+
+.block_soundcloud {
+    display: inline-block;
+    height: 280px;
+    width: 440px;
+    background-image: url(../assets/soundcloud_light.png);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.block_soundcloud:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 2s;
+    background-image: url(../assets/soundcloud_dark.png);
+}
