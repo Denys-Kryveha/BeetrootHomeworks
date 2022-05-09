@@ -42,8 +42,9 @@
             <button type="submit" class="button_block1 orange_button">
               Get started
             </button>
-            <a href="#watchthevideo" class="link_block1"
-              ><img src="./assets/icon_play.png" alt="Icon play" />
+            <a href="#watchthevideo" class="link_block1">
+              <img src="./assets/icon_play.png" alt="Icon play" />
+              <!-- TODO для іконки краще використовувати svg замість png -->
               <span>Watch the Video</span></a
             >
           </div>
@@ -52,6 +53,8 @@
           <img src="./assets/image_block1.svg" alt="happy people and books" />
         </div>
       </section>
+
+      <!-- TODO у блоках, для яких ти застосовував клас flex_container, не треба було створювати ще один div (block3_content, block4_content, ...), через це в тебе не працює space-between. Якщо тобі треба застосувати якісь стилі, які відрізняються для кожного блоку, то міг би для section задати ще один клас - <section class="flex_container block3_content"> - і вже в ньому додавати стилі -->
 
       <section class="flex_container">
         <div class="block2_content">
