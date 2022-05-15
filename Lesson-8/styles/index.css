@@ -259,9 +259,6 @@ h3 {
 
 .block4_content {
   margin-top: 120px;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
 }
 
 .block4_content span {
