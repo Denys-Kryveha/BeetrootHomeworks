@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Giloroy-Bold";
+    src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Giloroy-Medium";
+    src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+button {
+    font-family: Giloroy-Bold;
+}
+
+p,
+a {
+    font-family: Giloroy-Medium;
+    font-size: 18px;
+}
+
+
+header {
+    margin: 0 auto;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+
+}
+
+.links_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #828282;
+}
+
+.links_header a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    font-family: Giloroy-Bold;
+    cursor: pointer;
+}
+
+.links_header a:hover {
+    color: #070707;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.block1 {
+    height: 680px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.blockinline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.blockinline h1 {
+    height: 120px;
+    width: 124px;
+    font-size: 48px;
+}
+
+.blockinline p {
+    height: 45px;
+    width: 156px;
+}
+
+.pictures_block {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.language {
+
+    transform: translate(25px) rotate(270deg);
+}
+
+.language a {
+    text-decoration: none;
+    color: #828282;
+    font-family: Giloroy-Bold;
+    cursor: pointer;
+
+}
+
+.language a:hover {
+    color: #070707;
+}
+
+.language a:focus {
+    color: #070707;
+}
+
+.block2 {
+    padding-top: 120px;
+    text-align: center;
+    height: 506px;
+    background-color: #F6F6F6;
+}
+
+.block2 p {
+    padding-top: 18px;
+    width: 485px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block3 {
+    height: 610px;
+    margin-top: 90px;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.block3 h2 {
+    padding-bottom: 70px;
+}
+
+.skils_programs {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+}
+
+.program {
+    width: 166px;
+}
+
+.name_program {
+    height: 28px;
+    width: 100px;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: Giloroy-Bold;
+}
+
+
+.skils_stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+}
+
+.block4 {
+    text-align: center;
+    background-color: #F6F6F6;
+    height: 2253px;
+}
+
+.block4 h2 {
+    padding-top: 112px;
+}
+
+.block4 a {
+    color: #070707;
+}
+
+.portfolio_main {
+    padding-top: 47px;
+    padding-bottom: 45px;
+}
+
+.pictures_portfolio {
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 115px;
+}
+
+footer p {
+    height: 45px;
+    width: 275px;
+    margin: 20px auto 30px auto;
+}
+
+footer button {
+    height: 42px;
+    width: 180px;
+    background-color: #070707;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-bottom: 85px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    color: #070707;
+    background-color: #FFFFFF;
+}
+
+.links_footer {
+    width: 302px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 45px auto;
+}
+
+.like_me {
+    font-size: 14px;
+    font-family: Giloroy-Medium;
+    padding-bottom: 123px;
+}
