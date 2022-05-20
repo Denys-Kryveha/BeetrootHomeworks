@@ -197,7 +197,7 @@ footer {
     padding-top: 9px;
 
 }
-/* TODO потрібно було ховер додавати саме на svg, а не на їх контейнери */
-.link_size:hover {
-    background-color: #E5EAF4;
+
+.link_size:hover .icon_link {
+    fill: #52C29D;
 }
