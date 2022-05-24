@@ -1,3 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .card_table {
   display: -ms-grid;
   display: grid;
@@ -5,6 +14,7 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-height: 800px;
   gap: 10px;
   border-radius: 4px;
   background-color: green;
@@ -14,8 +24,8 @@
 .card_element1 {
   -webkit-animation-name: card_element1;
           animation-name: card_element1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -23,34 +33,34 @@
 .card_element2 {
   -webkit-animation-name: card_element2;
           animation-name: card_element2;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
 }
 
 .card_element3 {
   -webkit-animation-name: card_element3;
           animation-name: card_element3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
 }
 
 .card_element4 {
   -webkit-animation-name: card_element4;
           animation-name: card_element4;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
 }
 
 .card_element5 {
@@ -60,8 +70,8 @@
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition-delay: 4s;
-          transition-delay: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .card_element6 {
@@ -71,8 +81,8 @@
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition-delay: 5s;
-          transition-delay: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .card_element7 {
@@ -80,10 +90,10 @@
           animation-name: card_element7;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition-delay: 6s;
-          transition-delay: 6s;
 }
 
 .card_element8 {
@@ -91,8 +101,10 @@
           animation-name: card_element8;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-transition-delay: 7s;
-          transition-delay: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 .card_element1:hover {
@@ -105,16 +117,44 @@
           animation-play-state: paused;
 }
 
+.card_element3:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.card_element4:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.card_element5:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.card_element6:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.card_element7:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.card_element8:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
 @-webkit-keyframes card_element1 {
   0% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
+  50% {
     -webkit-transform: rotateY(-90deg);
             transform: rotateY(-90deg);
-  }
-  50% {
     content: url(../assets/6D.svg);
   }
 }
@@ -124,11 +164,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
+  50% {
     -webkit-transform: rotateY(-90deg);
             transform: rotateY(-90deg);
-  }
-  50% {
     content: url(../assets/6D.svg);
   }
 }
@@ -138,11 +176,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
+  50% {
     -webkit-transform: rotateY(-90deg);
             transform: rotateY(-90deg);
-  }
-  50% {
     content: url(../assets/7H.svg);
   }
 }
@@ -152,11 +188,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
+  50% {
     -webkit-transform: rotateY(-90deg);
             transform: rotateY(-90deg);
-  }
-  50% {
     content: url(../assets/7H.svg);
   }
 }
@@ -166,11 +200,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/8C.svg);
   }
 }
@@ -180,11 +212,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/8C.svg);
   }
 }
@@ -194,11 +224,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/9D.svg);
   }
 }
@@ -208,11 +236,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/9D.svg);
   }
 }
@@ -222,11 +248,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/TS.svg);
   }
 }
@@ -236,11 +260,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/TS.svg);
   }
 }
@@ -250,11 +272,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/JS.svg);
   }
 }
@@ -264,11 +284,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/JS.svg);
   }
 }
@@ -278,11 +296,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/QS.svg);
   }
 }
@@ -292,11 +308,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/QS.svg);
   }
 }
@@ -306,11 +320,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/AH.svg);
   }
 }
@@ -320,11 +332,9 @@
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  25% {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
   50% {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
     content: url(../assets/AH.svg);
   }
 }

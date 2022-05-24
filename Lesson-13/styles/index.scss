@@ -1,7 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .card_table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-height: 800px;
   gap: 10px;
   border-radius: 4px;
   background-color: green;
@@ -10,56 +19,55 @@
 
 .card_element1 {
   animation-name: card_element1;
-  animation-duration: 2s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
 }
 
 .card_element2 {
   animation-name: card_element2;
-  animation-duration: 2s;
+  animation-duration: 8s;
+  animation-delay: 1s;
   animation-iteration-count: infinite;
-  transition-delay: 1s;
 }
 
 .card_element3 {
   animation-name: card_element3;
-  animation-duration: 2s;
+  animation-duration: 4s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
-  transition-delay: 2s;
 }
 
 .card_element4 {
   animation-name: card_element4;
-  animation-duration: 2s;
+  animation-duration: 5s;
+  animation-delay: 3s;
   animation-iteration-count: infinite;
-  transition-delay: 3s;
 }
+
 .card_element5 {
   animation-name: card_element5;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  transition-delay: 4s;
+  animation-delay: 4s;
 }
 .card_element6 {
   animation-name: card_element6;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  transition-delay: 5s;
+  animation-delay: 5s;
 }
 .card_element7 {
   animation-name: card_element7;
   animation-duration: 2s;
+  animation-delay: 6s;
   animation-iteration-count: infinite;
-  transition-delay: 6s;
-
 }
 .card_element8 {
   animation-name: card_element8;
   animation-duration: 2s;
-  // animation-iteration-count: infinite;
-  transition-delay: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
 }
-
 
 .card_element1:hover {
   animation-play-state: paused;
@@ -69,20 +77,37 @@
   animation-play-state: paused;
 }
 
+.card_element3:hover {
+  animation-play-state: paused;
+}
+.card_element4:hover {
+  animation-play-state: paused;
+}
+
+.card_element5:hover {
+  animation-play-state: paused;
+}
+.card_element6:hover {
+  animation-play-state: paused;
+}
+
+.card_element7:hover {
+  animation-play-state: paused;
+}
+
+.card_element8:hover {
+  animation-play-state: paused;
+}
 
 @keyframes card_element1 {
   0% {
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(-90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/6D.svg);
   }
-
 }
 
 @keyframes card_element2 {
@@ -90,14 +115,10 @@
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(-90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/7H.svg);
   }
-
 }
 
 @keyframes card_element3 {
@@ -105,11 +126,8 @@
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/8C.svg);
   }
 }
@@ -119,24 +137,19 @@
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/9D.svg);
   }
 }
+
 @keyframes card_element5 {
   0% {
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/TS.svg);
   }
 }
@@ -146,11 +159,8 @@
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/JS.svg);
   }
 }
@@ -160,24 +170,19 @@
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/QS.svg);
   }
 }
+
 @keyframes card_element8 {
   0% {
     transform: rotateY(0deg);
   }
 
-  25% {
-    transform: rotateY(90deg);
-  }
-
   50% {
+    transform: rotateY(-90deg);
     content: url(../assets/AH.svg);
   }
 }
