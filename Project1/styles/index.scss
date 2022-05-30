@@ -55,7 +55,7 @@ main {
   text-align: center;
   background-image: url(../assets/main_background.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .main_block h1 {
@@ -200,6 +200,12 @@ header {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1440px) {
+  .block1 {
+    padding-left: 225px;
+  }
+}
+
 .block1 h2 {
   padding-top: 212px;
   padding-bottom: 50px;
@@ -216,6 +222,12 @@ header {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 1.6px;
+}
+
+@media screen and (max-width: 1200px) {
+  .block1 {
+    padding-left: 100px;
+  }
 }
 
 .pictures_block {
@@ -265,7 +277,7 @@ header {
 
   .content_block2 {
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
   }
 }
 
@@ -324,6 +336,20 @@ header {
   padding-right: 32px;
 }
 
+
+
+@media screen and (max-width: 1336px) {
+  .container_block3 {
+    left: 228px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container_block3 {
+    left: 128px;
+  }
+}
+
 .inscription_spain {
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
@@ -360,6 +386,30 @@ header {
   background-color: #232323;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+@media screen and (max-width: 1536px) {
+  .container_block4 {
+    left: 800px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container_block4 {
+    left: 700px;
+  }
+}
+
+@media screen and (max-width: 1336px) {
+  .container_block4 {
+    left: 600px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container_block4 {
+    left: 500px;
+  }
 }
 
 .block5 {
