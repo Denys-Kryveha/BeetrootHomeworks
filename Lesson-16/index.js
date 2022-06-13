@@ -206,23 +206,38 @@ let exercise9;
   }
  };
 
-// let exercise10 = prompt('Введіть від 0 до 100:');
 
-// N = exercise10/2;
+let a = 0;
+let b = 100;
+let N;
+  
+let exercise10 = prompt('Введіть від 0 до 100:');
 
-// massage1 = prompt('Ваше число ' + N + ' ?');
+if (exercise10 === '' || exercise10 == null || !(Number.isInteger(Number(exercise10)))){
+  alert('Невірно введені дані!!!');
+}
 
-//  while (exercise10 = N) {
-//     massage2   prompt('Ваше число меньше' + N + ' ?');  
-//     if (masage != null){  
-//        N = N/2;
-//     }
-//     else{
-//         h = N/2;
-//         N =  N + h; 
-//     }
+else{
 
-//  }
+  while (a<=b) {
+  N = Math.floor((b-a)/2 + a);
+ 
+    massage = prompt('Ваше число ' + N + '? Якщо так натисніть ОК, якщо ні - Відміна.');
+ 
+    if (massage != null) {
+       break;
+    };
+ 
+     massage1 = prompt('Ваше число більше ' + N + '? Якщо так натисніть ОК, якщо ні - Відміна.');
+ 
+     if (massage1 != null) {
+        a = N+1;     
+     } else {
+      b = N-1;
+    }
+ };
+};
+
 
 let exercise11;
 
@@ -230,50 +245,81 @@ for (let a=2; a<=9; a++) {
 
   for (let b=1; b<=10; b++) {
     exercise11 = a * b;
-    alert(a + ' x ' + b + ' = ' + exercise11);
+    console.log(a + ' x ' + b + ' = ' + exercise11);
   }
 
 }
 
-let year;
-let month;
-let day;
+const monthWith31Days = 31; 
+const monthWith30Days = 30; 
+let monthWith28Days = 28; 
+let nextDay = 1;
+let nextDate = '';
+
 
 year = +prompt('Вкажіть числом рік:');
 month = +prompt('Вкажіть числом місяць:');
 day = +prompt('Вкажіть числом день:');
 
-// if (Number.isInteger(year) && Number.isInteger(month) && Number.isInteger(day)){
 
-// if (year % 4 === 0) {
-//   if (year % 100 === 0) {
-//     if (year % 400 === 0) {
-//       dayYears = 366;
-//     } else {
-//       dayYears = 365;
-//     }
-//   } else {
-//     dayYears = 366;
-//   }
-// } else {
-//   dayYears = 365;
-// }
+if (Number.isInteger(year) && Number.isInteger(month) && Number.isInteger(day) && month <= 12 &&  day <= 31
+&& (month != 0 && day!=0 && year !=0)){
 
-// daysMonth = new Date(year, month, 0).getDate()
-// alert(days);
-
-
-// dateString = '';
-
-// if (month === 2){
-    
-// };
-
-if (Number.isInteger(year) && Number.isInteger(month) && Number.isInteger(day)){
-    let date = new Date(year, month, day);
-    date.setDate(date.getDate() + 1);
-    alert(date);
+if ((0 === year % 4) && (0 != year % 100) || (0 == year % 400)) {
+  dayYears = 366;
+} else {
+  dayYears = 365;
 }
-else{
-    alert('Невірно введені дані!!!');
+
+tempDay = day + 1;
+
+if (month === 2 && dayYears === 366) {
+  monthWith28Days = 29; 
+};
+
+
+if (month < 12) {
+
+
+ if (month === 2 && tempDay <= monthWith28Days){ 
+nextDay = tempDay;
+}
+ 
+  else if ((month === 4 || month === 6 || month === 9 || month === 11) && tempDay<=monthWith30Days){
+    nextDay = tempDay;
+   }
+  else if  ((month != 2 && month != 4 && month != 6 && month != 9 && month != 11) && tempDay<=monthWith31Days) {
+   nextDay = tempDay;
+   }
+ 
+  
+   numberDay =  nextDay < 10 ?('0'+ String(nextDay)) :  String(nextDay);
+  
+  if (nextDay != 1) {
+    numbermonth = month < 10 ?('0'+ month):  month;
+    nextDate = numberDay + '.' + numbermonth + '.' + year;
+  }
+  else{
+    nextMonth = month +1;
+    numbermonth = nextMonth < 10 ?('0'+ nextMonth):  nextMonth ;
+    nextDate = numberDay + '.' + String(numbermonth) + '.' + year; 
+  }
+
+}
+  else{
+    if  (tempDay <=31) {
+      numberDay =  nextDay < 10 ?('0'+ String(nextDay)) :  String(nextDay);
+      numbermonth = month < 10 ?('0'+ month):  month;
+      nextDate = numberDay + '.' + numbermonth + '.' + year;
+    }
+    else{
+    nextYear = year +1;
+    nextDate = '01.01.' + nextYear;
+    }
+  };
+alert(nextDate);
+
+}
+else {
+  alert('Невірно введені дані!!!');
 };
