@@ -75,7 +75,7 @@ if (Number.isInteger(x) && Number.isInteger(y)) {
 
 let exercise5 = +prompt('Вкажіть ціле число: ');
 
-stringNumeric = '';
+let stringNumeric = '';
 
 for (let k=1; k<=exercise5; k++) {
   if (exercise5%k===0){
@@ -99,7 +99,7 @@ if (exercise6 === '' || exercise6 == null ){
 }
 else {
 
-  stringPalindrom = '';
+  let stringPalindrom = '';
   let j = 5;
   while (j){
 j--;
@@ -117,6 +117,7 @@ alert(massage);
 };
 
 let exercise7 = +prompt('Введіть суму покупки, ₴:');
+let sale;
 
 if (exercise7 < 200) {
   sale = 0;
@@ -134,11 +135,11 @@ else if (exercise7 >= 500){
 alert(exercise7-sale);
 
 let exercise8;
-positive = 0;
-negative = 0;
-zeros = 0;
-guys = 0;
-odd = 0;
+let positive = 0;
+let negative = 0;
+let zeros = 0;
+let guys = 0;
+let odd = 0;
 
  for (let t=1; t<=10; t++) {
  exercise8 = prompt('Введіть ' + t + '-е число:');
@@ -257,9 +258,14 @@ let nextDay = 1;
 let nextDate = '';
 
 
-year = +prompt('Вкажіть числом рік:');
-month = +prompt('Вкажіть числом місяць:');
-day = +prompt('Вкажіть числом день:');
+let year = +prompt('Вкажіть числом рік:');
+let month = +prompt('Вкажіть числом місяць:');
+let day = +prompt('Вкажіть числом день:');
+let tempDay;
+let numberDay;
+let numberMonth;
+let nextMonth;
+let nextYear;
 
 
 if (Number.isInteger(year) && Number.isInteger(month) && Number.isInteger(day) && month <= 12 &&  day <= 31
@@ -296,21 +302,21 @@ nextDay = tempDay;
    numberDay =  nextDay < 10 ?('0'+ String(nextDay)) :  String(nextDay);
   
   if (nextDay != 1) {
-    numbermonth = month < 10 ?('0'+ month):  month;
-    nextDate = numberDay + '.' + numbermonth + '.' + year;
+    numberMonth = month < 10 ?('0'+ month):  month;
+    nextDate = numberDay + '.' + numberMonth + '.' + year;
   }
   else{
     nextMonth = month +1;
-    numbermonth = nextMonth < 10 ?('0'+ nextMonth):  nextMonth ;
-    nextDate = numberDay + '.' + String(numbermonth) + '.' + year; 
+    numberMonth = nextMonth < 10 ?('0'+ nextMonth):  nextMonth ;
+    nextDate = numberDay + '.' + String(numberMonth) + '.' + year; 
   }
 
 }
   else{
     if  (tempDay <=31) {
       numberDay =  nextDay < 10 ?('0'+ String(nextDay)) :  String(nextDay);
-      numbermonth = month < 10 ?('0'+ month):  month;
-      nextDate = numberDay + '.' + numbermonth + '.' + year;
+      numberMonth = month < 10 ?('0'+ month):  month;
+      nextDate = numberDay + '.' + numberMonth + '.' + year;
     }
     else{
     nextYear = year +1;
