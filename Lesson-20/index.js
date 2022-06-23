@@ -26,7 +26,7 @@ class Circle {
   }
 }
 
-const radiusCircle = prompt('Specify the radius of the circle ...');
+const radiusCircle = +prompt('Specify the radius of the circle ...');
 
 const circle = new Circle(radiusCircle);
 console.log(circle);
