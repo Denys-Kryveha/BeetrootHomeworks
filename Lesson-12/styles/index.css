@@ -1,7 +1,6 @@
 .main_conteiner {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header header" "sidebar section section" "footer footer footer";
+  grid-template-areas: "header header header" "sidebar section section" "footer footer footer";
   gap: 20px;
   border-radius: 4px;
 }
@@ -13,16 +12,9 @@
 }
 
 header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: header;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 header :hover {
@@ -38,30 +30,18 @@ header a {
 }
 
 .sidebar {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: sidebar;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  align-self: start;
 }
 
 section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: section;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 10px;
 }
 
 footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: footer;
 }
 
@@ -72,5 +52,4 @@ footer {
   color: #828282;
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

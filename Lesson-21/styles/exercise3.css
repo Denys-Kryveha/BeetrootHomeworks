@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.foundation {
+  width: 100px;
+  height: 300px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: darkslategrey;
+}
+
+.circle {
+  border: 1px solid #000000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: azure;
+}
+
+.button_switch {
+  background-color: cadetblue;
+  width: 60px;
+  height: 35px;
+  border-radius: 4px;
+  border: azure;
+  color: azure;
+  cursor: pointer;
+}
+
+.button_switch:hover {
+  color: cadetblue;
+  background-color: azure;
+}/*# sourceMappingURL=exercise3.css.map */
