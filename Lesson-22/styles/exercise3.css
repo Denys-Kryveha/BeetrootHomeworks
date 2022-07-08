@@ -1,0 +1,22 @@
+p {
+  background: #fff;
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 15px 15px;
+}
+
+p.resizable {
+  background: #29e;
+  position: relative;
+}
+
+p .resizer {
+  width: 10px;
+  height: 10px;
+  background: #29e;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+}/*# sourceMappingURL=exercise3.css.map */

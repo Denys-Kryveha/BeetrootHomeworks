@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+header {
+  padding: 0 100px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links_header {
+  display: inline;
+  padding: 28px 15px;
+}
+
+.links_header:hover {
+  background: #f16a50;
+}
+
+.links_header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.links_header a:hover {
+  color: #ffffff;
+}
+
+.block_icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.icon_header {
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.slick_page1 {
+  height: 700px;
+  width: 100%;
+  background-image: url(../assets/main_picture1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slick_page2 {
+  height: 700px;
+  width: 100%;
+  background-image: url(../assets/main_picture2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slick_page3 {
+  height: 700px;
+  width: 100%;
+  background-image: url(../assets/main_picture3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  height: 350px;
+  background-color: #35312d;
+  color: #f8f1ea;
+  padding: 70px 130px;
+  background-size: cover;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_links {
+  padding-top: 25px;
+}
+
+.links_footer {
+  padding-top: 10px;
+}
+
+.links_footer a {
+  text-decoration: none;
+  color: #f8f1ea;
+}
+
+.links_footer a:hover {
+  color: #f16a50;
+}
+
+footer p {
+  padding-top: 45px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer h3 {
+  font-size: 26px;
+}
+
+.telefon {
+  font-size: 26px;
+  padding-top: 35px;
+}
+
+.links_icon {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.link_size svg {
+  cursor: pointer;
+}
+
+.link_size:hover .icon_link {
+  fill: #C62100;
+}
+
+.link_instagram svg {
+  height: 30px;
+  width: 30px;
+  fill: #f8f1ea;
+}
+
+.link_facebook svg {
+  height: 30px;
+  width: 15px;
+  fill: #f8f1ea;
+}
+
+.link_pinterest svg {
+  height: 30px;
+  width: 23px;
+  fill: #f8f1ea;
+}
+
+.link_twitter svg {
+  height: 30px;
+  width: 36px;
+  fill: #35312d;
+}
+
+.link_youtube svg {
+  height: 30px;
+  width: 40px;
+  fill: #35312d;
+}/*# sourceMappingURL=index.css.map */
