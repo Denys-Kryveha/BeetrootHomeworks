@@ -111,13 +111,11 @@ ul {
   .links_header {
     display: none;
   }
-
   header {
     margin: 0;
     justify-content: flex-end;
     padding: 0;
   }
-
   .burger-icon {
     display: block;
     padding-top: 10px;
@@ -194,16 +192,13 @@ main {
     height: 750px;
     padding-bottom: 83px;
   }
-
   .blockinline {
     flex-direction: column;
     justify-content: center;
   }
-
   .pictures_block {
     display: none;
   }
-
   .pictures_block_mobile {
     display: block;
     padding-top: 37px;
@@ -213,29 +208,24 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-
   .pictures_block_mobile img {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
-
   .language {
     display: none;
   }
-
   .language_mobile {
     position: absolute;
     bottom: 70px;
     right: 30px;
     transform: translate(25px) rotate(90deg);
   }
-
   .language_mobile a:hover {
     color: #070707;
   }
-
   .language_mobile a:focus {
     color: #070707;
   }
@@ -244,13 +234,11 @@ main {
   .block1 {
     margin: 0;
   }
-
   .blockinline {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 30px;
   }
-
   .pictures_block_mobile {
     margin: 0;
   }
@@ -276,7 +264,6 @@ main {
     padding-top: 83px;
     height: 491px;
   }
-
   .block2 p {
     padding-top: 30px;
     width: 316px;
@@ -307,22 +294,18 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-
   .block3 h2 {
     text-align: center;
   }
-
   .block3 p {
     width: 316px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-
   .skils_programs {
     flex-direction: column;
   }
-
   .skils_stars {
     padding-bottom: 80px;
   }
@@ -379,26 +362,21 @@ main {
   .block4 {
     height: 1118px;
   }
-
   .block4 h2 {
     padding-top: 80px;
   }
-
   .portfolio_main {
     padding-top: 65px;
     padding-bottom: 45px;
   }
-
   .pictures_portfolio {
     padding-top: 78px;
     padding-bottom: 35px;
   }
-
   .portfolio_main img {
     height: 171px;
     width: 316px;
   }
-
   .pictures_portfolio img {
     height: 176px;
     width: 316px;
